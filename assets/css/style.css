@@ -1,0 +1,248 @@
+/* body & base setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #ffffff;
+    color: #111;
+    line-height: 1.6;
+    margin: 0;
+    padding-top: 80px;
+    /* space for fixed navbar */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1em;
+    flex: 1;
+}
+
+h1,
+h2 {
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+ul,
+ol {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+a {
+    color: #0044cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: black;
+    color: white;
+    padding: 1em 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5em;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+}
+
+/* footer */
+.site-footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 2em 1em;
+    font-size: 0.9em;
+    margin-top: auto;
+}
+
+.footer-container a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container a:hover {
+    text-decoration: underline;
+}
+
+/* hero section */
+.hero-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 3em;
+    max-width: 1100px;
+    margin: auto;
+    padding: 4em 1em 3em;
+}
+
+.hero-left,
+.hero-right {
+    flex: 1 1 480px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.hero-right h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    text-align: left;
+}
+
+.hero-right p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    padding: 0.7em 1.4em;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+
+/* mission section (inside hero-right) */
+.mission {
+    margin-top: 2em;
+}
+
+.mission h3 {
+    font-size: 1.5em;
+    margin-bottom: 0.5em;
+}
+
+/* email form */
+.membership-form {
+    margin-top: 2em;
+    background-color: #f5f5f5;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.membership-form label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+.membership-form input[type="email"] {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.7em;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.membership-form input[type="submit"] {
+    margin-top: 1em;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 0.6em 1.2em;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.membership-form input[type="submit"]:hover {
+    background-color: #333;
+}
+
+/* news page layout */
+.news-page {
+    max-width: 900px;
+    margin: auto;
+    padding: 2em 1em;
+}
+
+.news-page article {
+    margin-bottom: 2em;
+}
+
+.news-page h2 {
+    margin-top: 1.2em;
+}
+
+.news-page ul {
+    margin-left: 1.5em;
+    margin-bottom: 1em;
+}
+
+.news-page p em {
+    display: block;
+    margin-bottom: 0.5em;
+    font-style: italic;
+    color: gray;
+}
