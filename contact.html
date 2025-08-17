@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | ADGWU</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description"
+        content="Get in touch with the Australian Digital Gig Workers Union (ADGWU) for support, membership, or media inquiries." />
+    <style>
+        .contact-page {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 7rem 1rem 3rem;
+        }
+
+        .contact-page h1 {
+            margin-bottom: 1rem;
+        }
+
+        .contact-form {
+            display: grid;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .contact-form label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .contact-form button {
+            padding: 0.9rem 1.2rem;
+            border-radius: 8px;
+            border: none;
+            background: #111;
+            color: #fff;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .contact-form button:hover {
+            background: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">ADGWU</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="platform-work.html">Platform Work</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="testimonials.html">Testimonials</a></li>
+                <li><a href="membership.html">Join</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="contact-page">
+        <h1>Contact Us</h1>
+        <p>If you have been affected by unfair platform practices or want to learn more about the union, get in touch
+            with us below.</p>
+
+        <form class="contact-form" action="#" method="post">
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required>
+            </div>
+            <div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+
+        <p style="margin-top:1.5rem;">Or email us directly at <a
+                href="mailto:contact@adgwu.org.au">contact@adgwu.org.au</a></p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <p>&copy; 2035 Australian Digital Gig Workers Union (ADGWU). All rights reserved.</p>
+            <p><a href="mailto:contact@adgwu.org.au">contact@adgwu.org.au</a></p>
+        </div>
+    </footer>
+</body>
+
+</html>

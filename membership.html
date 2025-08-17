@@ -6,6 +6,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Membership | Australian Digital Gig Workers Union</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+    <meta name="description"
+        content="Join the Australian Digital Gig Workers Union (ADGWU) for access to benefits, training, insurance, and a stronger collective voice." />
+    <style>
+        .membership-page {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 7rem 1rem 3rem;
+        }
+
+        .membership-page h1,
+        .membership-page h2 {
+            margin-top: 1.25rem;
+            margin-bottom: .75rem;
+        }
+
+        .membership-page p,
+        .membership-page li {
+            line-height: 1.7;
+            color: #111827;
+        }
+
+        .membership-page ul,
+        .membership-page ol {
+            margin: .5rem 0 1rem 1.25rem;
+        }
+
+        .membership-form {
+            margin-top: 2rem;
+            padding: 1.25rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background: #f9fafb;
+        }
+
+        .membership-form input[type="email"] {
+            width: 100%;
+            max-width: 400px;
+            padding: .5rem;
+            margin: .5rem 0 1rem;
+            border: 1px solid #d1d5db;
+            border-radius: 6px;
+        }
+
+        .membership-form input[type="submit"] {
+            background: #111;
+            color: #fff;
+            padding: .6rem 1rem;
+            border: none;
+            border-radius: 999px;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .membership-form input[type="submit"]:hover {
+            background: #333;
+        }
+
+        /* FAQ Styles */
+        .faq-section {
+            margin-top: 3rem;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .faq-question {
+            background: #fff;
+            border: none;
+            width: 100%;
+            text-align: left;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1rem 0;
+            cursor: pointer;
+        }
+
+        .faq-answer {
+            display: none;
+            padding: 0 0 1rem 0;
+            color: #374151;
+            line-height: 1.6;
+        }
+
+        .faq-item.active .faq-answer {
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,7 +117,10 @@
     <main class="membership-page">
         <section class="membership-info">
             <h1>Sign Up / Membership</h1>
-            <p>As a member of the Australian Digital Gig Workers Union, you get access to the following benefits:</p>
+            <p>
+                As a member of the Australian Digital Gig Workers Union (ADGWU), you gain access to a wide range of
+                benefits designed to protect, empower, and support gig workers across Australia:
+            </p>
 
             <ul>
                 <li>20% discount on legal and dispute resolution services</li>
@@ -37,7 +128,7 @@
                 <li>Great-value private health insurance via <a href="https://unionhealth.com.au/"
                         target="_blank">UnionHealth</a></li>
                 <li>Reliable, affordable vehicle insurance via DeliveryProtect</li>
-                <li>Savings and discounts through <a href="https://unionshopper.com.au/"
+                <li>Savings and discounts on goods through <a href="https://unionshopper.com.au/"
                         target="_blank">UnionShopper</a></li>
                 <li>Exclusive updates via the ADGWU newsletter</li>
                 <li>Invitation to our annual national conference in Sydney</li>
@@ -46,24 +137,73 @@
             <h2>How to Join</h2>
             <p>To become a member, follow these steps:</p>
             <ol>
-                <li>Fill in your contact and work details in the form below.</li>
-                <li>Our team will process your application within 2–3 business days and send a confirmation email.</li>
-                <li>Click the link in the email to make your membership payment.</li>
-                <li>Once payment is confirmed, your membership is active and benefits begin.</li>
+                <li>Fill in your contact and work details in the Membership Application form below.</li>
+                <li>Our team will process your application within 2–3 business days and send you a confirmation email.
+                </li>
+                <li>Click the link in the email to make your membership confirmation payment (credit or debit card).
+                </li>
+                <li>Once payment is confirmed, your membership is active and benefits begin immediately.</li>
             </ol>
 
-            <p>Become a member and join us in the fight for fairer wages and protections for gig workers.</p>
+            <p><strong>Become a member and join us in the fight for fairer wages and protections for gig
+                    workers.</strong></p>
         </section>
 
-        <!-- Membership Form (non-functional) -->
+        <!-- Membership Form (non-functional demo) -->
         <section class="membership-form">
             <h2>Membership Application</h2>
             <form>
                 <label for="email">Your Email:</label><br />
                 <input type="email" id="email" name="email" placeholder="your@email.com" required />
-                <br /><br />
+                <br />
                 <input type="submit" value="Apply Now" />
             </form>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="faq-section">
+            <h2>Membership FAQ</h2>
+
+            <div class="faq-item">
+                <button class="faq-question">How much does membership cost?</button>
+                <div class="faq-answer">
+                    <p>Membership fees are tiered to ensure affordability for all workers. Rates depend on income level,
+                        with discounts for students and part-time workers. Full details are provided in your
+                        confirmation email.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Can I cancel my membership?</button>
+                <div class="faq-answer">
+                    <p>Yes. Membership can be cancelled at any time by emailing our support team. Refunds may apply
+                        depending on your payment cycle.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">Do I need to be full-time to join?</button>
+                <div class="faq-answer">
+                    <p>No — ADGWU welcomes all gig workers, whether full-time, part-time, or casual. If you’ve worked
+                        through a platform, you’re eligible to join.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">What payment methods do you accept?</button>
+                <div class="faq-answer">
+                    <p>Membership payments can be made securely by debit or credit card. Recurring monthly or annual
+                        options are available.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question">When do I start receiving benefits?</button>
+                <div class="faq-answer">
+                    <p>Benefits become active immediately after your first membership payment is confirmed. You’ll
+                        receive a welcome email with access instructions.</p>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -75,6 +215,17 @@
         </div>
     </footer>
 
+    <!-- FAQ Toggle Script -->
+    <script>
+        const faqs = document.querySelectorAll('.faq-item');
+
+        faqs.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 
 </html>
