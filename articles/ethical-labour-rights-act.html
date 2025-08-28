@@ -12,38 +12,36 @@
         .article-page {
             max-width: 900px;
             margin: 0 auto;
-            padding: 7rem 1rem 3rem
+            padding: 7rem 1rem 3rem;
         }
 
         .article-hero {
-            width: 100%;
-            height: 320px;
-            border-radius: 16px;
-            overflow: hidden;
-            background: #f3f4f6;
-            margin-bottom: 1rem
-        }
+    max-width: 400px;      
+    margin: 0 auto 1rem; 
+    border-radius: 16px;
+    overflow: hidden;
+}
 
-        .article-hero img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block
-        }
+.article-hero img {
+    width: 100%;           
+    height: auto;          
+    display: block;
+}
+
 
         .article-meta {
             color: #6b7280;
-            margin: .25rem 0 1rem
+            margin: .25rem 0 1rem;
         }
 
         .article-page h1 {
-            margin: .5rem 0 .25rem
+            margin: .5rem 0 .25rem;
         }
 
         .backbar {
             display: flex;
             gap: .5rem;
-            margin-bottom: 1rem
+            margin-bottom: 1rem;
         }
 
         .btn {
@@ -56,23 +54,40 @@
             font-size: .95rem;
             border: 1px solid #111;
             background: #111;
-            color: #fff
+            color: #fff;
         }
 
         .btn-outline {
             background: #fff;
             color: #111;
-            border-color: #d1d5db
+            border-color: #d1d5db;
         }
 
         .prose p {
             margin: .75rem 0;
             line-height: 1.7;
-            color: #111827
+            color: #111827;
         }
 
         .prose ul {
-            margin: .5rem 0 1rem 1.2rem
+            margin: .5rem 0 1rem 1.2rem;
+        }
+
+        .references {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .references h2 {
+            font-size: 1.25rem;
+            margin-bottom: .75rem;
+        }
+
+        .references ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+            color: #1f2937;
         }
     </style>
 </head>
@@ -96,47 +111,67 @@
 
     <main class="article-page">
         <div class="backbar"><a href="../news.html" class="btn btn-outline"
-                onclick="event.preventDefault(); if (document.referrer) { history.back(); } else { location.href='../news.html'; }">←
+                onclick="event.preventDefault(); if (document.referrer) { location.href='../news.html'; }">←
                 Back to News</a></div>
 
         <article>
             <div class="article-hero">
-                <img src="../assets/img/news/ridemate-launch.jpg"
-                    alt="RideMate app promotional poster with drivers and passengers">
+                <img src="../assets/img/news/ridemate-launch.jpg" alt="RideMate promotional poster">
+                <figcaption style="font-size:0.9rem; color:#6b7280; margin-top:0.4rem; text-align:center;">
+                    Image source: <a href="https://play.google.com/store/apps/details?id=com.ridemate" target="_blank">RideMate on
+                        Google Play</a>
+                </figcaption>
             </div>
 
-            <h1>First Ethical Digital Labour Platform Launches</h1>
+            <h1>First Ethical Digital Labour Platform Launches in accordance with the Digital Workers Rights Act</h1>
             <p class="article-meta">Victoria · <time datetime="2035-08-19">August 19, 2035</time></p>
 
             <div class="prose">
-                <p><strong>RideMate</strong>, a new rideshare app funded by the Australian government and developed in
-                    consultation with the ADGWU, has launched with more than 5,000 users in its first week. The platform
-                    is being promoted as “putting workers first” and operating in full compliance with the
-                    <em>Digital Workers Rights Act 2035</em>.
-                </p>
+                <p><strong>Victoria, August 19, 2035</strong> - RideMate, a new ride-sharing app, was officially
+                    launched last week. Having been developed in consultation with the ADGWU, the platform is being
+                    promoted as “putting workers first” through its co-op model, and operating in full compliance with
+                    the <em>Digital Workers Rights Act 2035</em>.</p>
 
-                <p>As RideMate spokesperson <strong>Ryan McKenzie</strong> explained:</p>
+                <p><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/newe.12023?saml_referrer"
+                        target="_blank"><strong>Platform capitalist</strong></a> apps such as Uber centralize power to
+                    platform owners and shareholders, who govern the conditions of how work and payment are distributed
+                    on the app, which workers are subjected to.</p>
 
-                <blockquote>
-                    “RideMate is our answer to the long-standing worker exploitation from apps like Uber and Lyft. We
-                    understand the injustices that drivers face, and want to create a platform where they feel respected
-                    and valued for their time and effort.”
-                </blockquote>
+                <p>In contrast, RideMate uses a <a href="https://doi.org/10.1080/08935696.2021.1893108"
+                        target="_blank"><strong>platform cooperative</strong></a> model, where the platform is
+                    collectively owned by each worker, who has equal rights and say in how it is governed. Instead of
+                    trying to maximize profits or platform growth, RideMate provides workers the ability to advocate for
+                    sustainable hours and wages. Similar gig working cooperatives, such as <a
+                        href="https://journals.sagepub.com/doi/10.1177/13505084221145564"
+                        target="_blank"><strong>Salmo</strong></a> in France and <a href="https://drivers.coop/"
+                        target="_blank"><strong>Co-Op Ride</strong></a> in the US already exist, but RideMate is the
+                    first of its scale founded in Australia.</p>
 
-                <p>RideMate introduces several worker-first features:</p>
+                <p>In accordance with its co-op principles RideMate boasts the following capabilities:</p>
                 <ul>
-                    <li>Minimum wage guarantees for all jobs, independent of tips</li>
-                    <li>A transparent fee calculation system not linked to tip amounts</li>
-                    <li>Fuel compensation via IoT devices tracking per-task consumption</li>
-                    <li>A detailed dispute system that weighs evidence from both parties</li>
+                    <li>Drivers get the majority of the payment for a job, with 10% commission taken for maintenance and
+                        development costs. Tips are also awarded to drivers in full.</li>
+                    <li>Drivers are invited to a monthly online meeting with developers where they are able to discuss
+                        decisions and potential changes.</li>
                 </ul>
 
-                <p>Whether RideMate can maintain its worker-first principles or eventually succumb to
-                    <a href="https://doi.org/10.1111/ntwe.12233" target="_blank">platform decay</a> remains to be seen.
-                    For now, ADGWU welcomes the launch as a sign that ethical, rights-based alternatives are possible
-                    under Australia’s new digital labour laws.
-                </p>
+                <p>Whether RideMate can maintain its worker-first principles or eventually succumb to platform decay
+                    remains to be seen. For now, ADGWU welcomes the launch as a sign that ethical, rights-based
+                    alternatives are possible under Australia’s new digital labour laws.</p>
             </div>
+
+            <section class="references">
+                <h2>References</h2>
+                <ul>
+                    <li><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/newe.12023?saml_referrer"
+                            target="_blank">Scholarly article on platform capitalism (Wiley Online Library)</a></li>
+                    <li><a href="https://doi.org/10.1080/08935696.2021.1893108" target="_blank">Platform cooperativism
+                            study (DOI link)</a></li>
+                    <li><a href="https://journals.sagepub.com/doi/10.1177/13505084221145564" target="_blank">Salmo
+                            cooperative case (SAGE Journals)</a></li>
+                    <li><a href="https://drivers.coop/" target="_blank">Co-Op Ride official website</a></li>
+                </ul>
+            </section>
         </article>
     </main>
 

@@ -246,3 +246,66 @@ a:hover {
     font-style: italic;
     color: gray;
 }
+
+.featured-article {
+    display: flex;
+    justify-content: center;
+    /* centers horizontally */
+    padding: 3rem 1rem;
+    background: #f9fafb;
+    /* light grey background behind card (optional) */
+}
+
+.featured-container {
+    max-width: 1000px;
+    width: 100%;
+}
+
+.featured-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    background: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, .08);
+    padding: 1.5rem;
+    align-items: center;
+    margin: 0 auto;
+    /* ensure it's centered */
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.featured-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 24px rgba(0, 0, 0, .12);
+}
+
+.featured-img {
+    width: 280px;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.featured-content {
+    flex: 1;
+}
+
+.featured-content h3 {
+    margin: 0 0 .5rem;
+    font-size: 1.5rem;
+}
+
+.featured-content .news-meta {
+    color: #6b7280;
+    font-size: .9rem;
+    margin-bottom: .75rem;
+}
+
+.featured-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}

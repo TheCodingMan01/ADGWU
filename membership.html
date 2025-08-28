@@ -63,7 +63,6 @@
             background: #333;
         }
 
-        /* FAQ Styles */
         .faq-section {
             margin-top: 3rem;
         }
@@ -93,6 +92,28 @@
         .faq-item.active .faq-answer {
             display: block;
         }
+
+        .references {
+            margin-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 1rem;
+        }
+
+        .references h2 {
+            font-size: 1.1rem;
+            margin-bottom: .5rem;
+        }
+
+        .references ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: #374151;
+        }
+
+        .references li {
+            margin-bottom: .4rem;
+            line-height: 1.6;
+        }
     </style>
 </head>
 
@@ -108,9 +129,9 @@
                 <li><a href="platform-work.html">Platform Work</a></li>
                 <li><a href="news.html">News</a></li>
                 <li><a href="testimonials.html">Testimonials</a></li>
-                <li><a href="membership.html">Join</a></li>
-                <li><a href="contact.html" class="active">Contact</a></li>
-                <li><a href="references.html" class="active">References</a></li>
+                <li><a href="membership.html" class="active">Join</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="references.html">References</a></li>
             </ul>
         </div>
     </nav>
@@ -120,38 +141,38 @@
         <section class="membership-info">
             <h1>Sign Up / Membership</h1>
             <p>
-                As a member of the Australian Digital Gig Workers Union (ADGWU), you gain access to a wide range of
-                benefits designed to protect, empower, and support gig workers across Australia:
+                As a member of the Australian Digital Gig Workers Union, you get access to the following benefits:
             </p>
 
             <ul>
-                <li>20% discount on legal and dispute resolution services</li>
-                <li>Workshops and online training on client management and workplace safety</li>
+                <li>Access to legal and dispute resolution services at a 20% discounted rate.</li>
+                <li>Workshops and Online Training Resources focused around client management and workplace safety
+                    practices.</li>
                 <li>Great-value private health insurance via <a href="https://unionhealth.com.au/"
-                        target="_blank">UnionHealth</a></li>
-                <li>Reliable, affordable vehicle insurance via DeliveryProtect</li>
-                <li>Savings and discounts on goods through <a href="https://unionshopper.com.au/"
-                        target="_blank">UnionShopper</a></li>
-                <li>Exclusive updates via the ADGWU newsletter</li>
-                <li>Invitation to our annual national conference in Sydney</li>
+                        target="_blank">UnionHealth</a>.</li>
+                <li>Reliable and cheap vehicle insurance via DeliveryProtect.</li>
+                <li>Savings and Discounts on a wide variety of goods via <a href="https://unionshopper.com.au/"
+                        target="_blank">UnionShopper</a>.</li>
+                <li>Exclusive updates from the ADGWU newsletter.</li>
+                <li>An invitation to the national ADGWU conference hosted annually in Sydney.</li>
             </ul>
 
             <h2>How to Join</h2>
-            <p>To become a member, follow these steps:</p>
+            <p>In order to become a member, you must do the following:</p>
             <ol>
-                <li>Fill in your contact and work details in the Membership Application form below.</li>
-                <li>Our team will process your application within 2–3 business days and send you a confirmation email.
-                </li>
-                <li>Click the link in the email to make your membership confirmation payment (credit or debit card).
-                </li>
-                <li>Once payment is confirmed, your membership is active and benefits begin immediately.</li>
+                <li>Provide your contact and work details in the Membership Application Form.</li>
+                <li>Once completed, it will be processed by ADGWU staff and you will receive an email reply to finalise
+                    your application in 2–3 business days.</li>
+                <li>This email contains a link to make a membership confirmation payment via credit or debit card.</li>
+                <li>Once that has been completed, your membership is confirmed and you can enjoy the benefits that ADGWU
+                    has to offer.</li>
             </ol>
 
-            <p><strong>Become a member and join us in the fight for fairer wages and protections for gig
+            <p><strong>Become a member, and join us in the fight for fairer wages and workplace protections for gig
                     workers.</strong></p>
         </section>
 
-        <!-- Membership Form (non-functional demo) -->
+        <!-- Membership Form (demo only) -->
         <section class="membership-form">
             <h2>Membership Application</h2>
             <form>
@@ -207,6 +228,17 @@
                 </div>
             </div>
         </section>
+
+        <!-- References -->
+        <section class="references">
+            <h2>References</h2>
+            <ul>
+                <li><a href="https://unionhealth.com.au/" target="_blank">UnionHealth – Private health insurance for
+                        union members</a></li>
+                <li><a href="https://unionshopper.com.au/" target="_blank">UnionShopper – Savings and discounts for
+                        members</a></li>
+            </ul>
+        </section>
     </main>
 
     <!-- Footer -->
@@ -220,7 +252,6 @@
     <!-- FAQ Toggle Script -->
     <script>
         const faqs = document.querySelectorAll('.faq-item');
-
         faqs.forEach(item => {
             const question = item.querySelector('.faq-question');
             question.addEventListener('click', () => {

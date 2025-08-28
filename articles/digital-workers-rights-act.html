@@ -17,19 +17,26 @@
 
         .article-hero {
             width: 100%;
-            height: 320px;
             border-radius: 16px;
-            overflow: hidden;
             background: #f3f4f6;
             margin-bottom: 1rem;
+            text-align: center;
         }
 
         .article-hero img {
             width: 100%;
-            height: 100%;
+            max-height: 320px;
             object-fit: cover;
+            border-radius: 16px;
             display: block;
         }
+
+        .article-hero figcaption {
+            font-size: 0.9rem;
+            color: #6b7280;
+            margin-top: 0.4rem;
+        }
+
 
         .article-meta {
             color: #6b7280;
@@ -57,6 +64,7 @@
             border: 1px solid #111;
             background: #111;
             color: #fff;
+            text-decoration: none;
         }
 
         .btn-outline {
@@ -73,6 +81,28 @@
 
         .prose ul {
             margin: .5rem 0 1rem 1.2rem;
+        }
+
+        .references {
+            margin-top: 2rem;
+            border-top: 1px solid #e5e7eb;
+            padding-top: 1rem;
+        }
+
+        .references h2 {
+            font-size: 1.1rem;
+            margin-bottom: .5rem;
+        }
+
+        .references ul {
+            margin: 0;
+            padding-left: 1.2rem;
+            color: #374151;
+        }
+
+        .references li {
+            margin-bottom: .4rem;
+            line-height: 1.6;
         }
     </style>
 </head>
@@ -105,54 +135,97 @@
             <div class="article-hero">
                 <img src="../assets/img/news/digital-workers-rights-act.jpg" alt="Parliament House at dusk, Canberra">
             </div>
+            <figcaption style="font-size:0.9rem; color:#6b7280; margin-top:0.4rem; text-align:center;">
+                Image source: <a href="https://commons.wikimedia.org/wiki/File:Parliament_House_at_dusk,_Canberra_ACT.jpg"
+                    target="_blank">Wikimedia Commons</a>
+            </figcaption>
+
 
             <h1>Victory for Fair Pay: Parliament Passes the Digital Workers Rights Act</h1>
             <p class="article-meta">Canberra · <time datetime="2033-03-03">March 3, 2033</time></p>
 
             <div class="prose">
-                <p>In a historic win for the Australian Digital Gig Workers Union (ADGWU), the
-                    <em>Digital Workers Rights Act 2033</em> has officially passed both houses of Parliament,
-                    ushering in a new era of protections for digital and platform workers. The change comes in an
-                    industry
-                    long plagued by algorithmic management and precarity, according to
+                <p>In a historic win for the Australian Digital Gig Workers Union (ADGWU), the <em>Digital Workers
+                        Rights Act
+                        2033</em> has officially passed both houses of Parliament. This change ushers in a new era of
+                    protections for
+                    digital and platform workers across the country, in an industry previously riddled by
                     <a href="https://www.australianunions.org.au/2024/11/04/new-rights-and-protections-for-gig-economy-workers/"
-                        target="_blank">Stewart &amp; Crawford (2022, p.12)</a>.
+                        target="_blank">algorithmic management and precarity</a>.
                 </p>
 
-                <p>The Act mandates a series of baseline protections, including:</p>
+                <p><strong>The Act mandates:</strong></p>
                 <ul>
                     <li>Minimum hourly pay guarantees</li>
                     <li>Superannuation inclusion</li>
                     <li>Collective bargaining rights</li>
-                    <li>Transparency on ratings, fees, and algorithmic decisions</li>
+                    <li>Minimum transparency requirements</li>
                     <li>Mandated rest periods</li>
                     <li>Access to dispute resolution</li>
                     <li>Health and safety protections</li>
                     <li>Limits on unpaid waiting time</li>
                 </ul>
 
-                <p>Crucially, it defines “digital workers” as individuals performing labour mediated by algorithmic
-                    systems, including freelancers, content creators, moderators, designers, transcriptionists, and
-                    platform-based service providers.</p>
+                <p>Crucially, it defines “digital workers” as individuals performing labor mediated by algorithmic
+                    systems
+                    including freelancers, content creators & moderators, designers, transcriptionists, and
+                    platform-based service
+                    providers.</p>
 
-                <p>ADGWU President Anna Liu described the reform as “the most significant workplace law since the
-                    <em>Fair Work Act 2009</em>.” She added:
+                <p>ADGWU President Anna Liu described the reform as “the most significant workplace law since the Fair
+                    Work Act
+                    2009. “For too long, digital labor has been disguised as ‘entrepreneurship’,” Gupta said. “This Act
+                    makes
+                    clear that control through algorithms is still control. And that means rights.”</p>
+
+                <p>Global organisations like Uber, UStream and Deliveroo have pushed back, claiming compliance will
+                    “reduce
+                    platform agility.” However, labor researchers have argued that the reform has been well overdue for
+                    over a
+                    decade. As Kyloh (2018) wrote that Australian workers were uniquely susceptible to precarity with
+                    the third
+                    highest level of non-standard work with workers reporting
+                    <a href="https://www.australianunions.org.au/2024/11/04/new-rights-and-protections-for-gig-economy-workers/"
+                        target="_blank">little to no job security due to a lack of regulation</a>.
                 </p>
 
-                <blockquote>
-                    “For too long, digital labour has been disguised as ‘entrepreneurship’. This Act makes clear that
-                    control through algorithms is still control — and that means rights.”
-                </blockquote>
+                <p>This was just one example of growing tensions between workers we now know as ‘platform workers’ and
+                    platforms. Platform workers sometimes unknowingly engaged in unpaid labour such as content
+                    provisioning, with
+                    platforms <a href="https://doi.org/10.1016/j.jbusres.2013.10.001" target="_blank">reaping and not
+                        sharing the
+                        benefits</a>.</p>
 
-                <p>Global organisations such as Uber, UStream and Deliveroo criticised the legislation, claiming
-                    compliance will “reduce platform agility.” But labour researchers argue the reform is overdue. As
-                    <a href="https://www.adelaide.edu.au/press/ua/media/621/uap-wages-crisis-ebook.pdf"
-                        target="_blank">Kyloh (2018, p.235)</a> noted, Australian workers face some of the world’s
-                    highest levels of non-standard work, reporting little to no job security due to weak regulation.
+                <p>Scholars such as M. Bauwens have described this dynamic as netarchical capitalism, a model where
+                    platform
+                    owners extract rents from networked social cooperation while marketing themselves as facilitators of
+                    ‘sharing’. In this capitalism model, workers’ creative and
+                    <a href="https://catalogue.curtin.edu.au/discovery/fulldisplay?docid=alma9938747934301951&context=L&vid=61CUR_INST:CUR_ALMA&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,peer%20to%20peer&offset=0"
+                        target="_blank">social exchanges are captured and monetised</a> by proprietary networks such as
+                    Uber and
+                    AirBnB, reinforcing a system of dependency and precarity. The new Act directly challenges these
+                    structures by
+                    embedding minimum standards and recognising digital labour as real labour.
                 </p>
+            </div>
 
-                <p>For ADGWU members, however, the passage of the Act marks the beginning of a more secure digital
-                    future.</p>
+            <div class="references">
+                <h2>References</h2>
+                <ul>
+                    <li>Australian Unions (2024). <em>New Rights and Protections for Gig Economy Workers</em>. Retrieved
+                        from <a
+                            href="https://www.australianunions.org.au/2024/11/04/new-rights-and-protections-for-gig-economy-workers/"
+                            target="_blank">https://www.australianunions.org.au/.../gig-economy-workers</a></li>
+                    <li>Kyloh, B. (2018). Discussion on precarity in Australian non-standard work.</li>
+                    <li>Business Research Journal (2013). <em>Platform labour and value extraction</em>. DOI: <a
+                            href="https://doi.org/10.1016/j.jbusres.2013.10.001"
+                            target="_blank">10.1016/j.jbusres.2013.10.001</a></li>
+                    <li>Bauwens, M. (2013). <em>Peer-to-peer dynamics and netarchical capitalism</em>. Curtin Library.
+                        Retrieved
+                        from <a
+                            href="https://catalogue.curtin.edu.au/discovery/fulldisplay?docid=alma9938747934301951&context=L&vid=61CUR_INST:CUR_ALMA&lang=en&search_scope=MyInst_and_CI&adaptor=Local%20Search%20Engine&tab=Everything&query=any,contains,peer%20to%20peer&offset=0"
+                            target="_blank">Curtin University Catalogue</a></li>
+                </ul>
             </div>
         </article>
     </main>

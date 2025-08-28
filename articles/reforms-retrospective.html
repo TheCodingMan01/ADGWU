@@ -12,7 +12,7 @@
         .article-page {
             max-width: 900px;
             margin: 0 auto;
-            padding: 7rem 1rem 3rem
+            padding: 7rem 1rem 3rem;
         }
 
         .article-hero {
@@ -21,29 +21,29 @@
             border-radius: 16px;
             overflow: hidden;
             background: #f3f4f6;
-            margin-bottom: 1rem
+            margin-bottom: 1rem;
         }
 
         .article-hero img {
             width: 100%;
             height: 100%;
             object-fit: cover;
-            display: block
+            display: block;
         }
 
         .article-meta {
             color: #6b7280;
-            margin: .25rem 0 1rem
+            margin: .25rem 0 1rem;
         }
 
         .article-page h1 {
-            margin: .5rem 0 .25rem
+            margin: .5rem 0 .25rem;
         }
 
         .backbar {
             display: flex;
             gap: .5rem;
-            margin-bottom: 1rem
+            margin-bottom: 1rem;
         }
 
         .btn {
@@ -56,19 +56,40 @@
             font-size: .95rem;
             border: 1px solid #111;
             background: #111;
-            color: #fff
+            color: #fff;
         }
 
         .btn-outline {
             background: #fff;
             color: #111;
-            border-color: #d1d5db
+            border-color: #d1d5db;
         }
 
         .prose p {
             margin: .75rem 0;
             line-height: 1.7;
-            color: #111827
+            color: #111827;
+        }
+
+        .prose ul {
+            margin: .5rem 0 1rem 1.2rem;
+        }
+
+        .references {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+
+        .references h2 {
+            font-size: 1.25rem;
+            margin-bottom: .75rem;
+        }
+
+        .references ul {
+            list-style: disc;
+            margin-left: 1.5rem;
+            color: #1f2937;
         }
     </style>
 </head>
@@ -91,54 +112,102 @@
     </nav>
 
     <main class="article-page">
-        <div class="backbar"><a href="../news.html" class="btn btn-outline"
-                onclick="event.preventDefault(); if (document.referrer) { history.back(); } else { location.href='../news.html'; }">←
-                Back to News</a></div>
+        <div class="backbar">
+            <a href="../news.html" class="btn btn-outline">← Back to News</a>
+        </div>
 
         <article>
             <div class="article-hero">
                 <img src="../assets/img/news/reforms-retrospective.jpg" alt="Sydney skyline with warm evening light">
             </div>
+            <figcaption style="font-size:0.9rem; color:#6b7280; margin-top:0.4rem; text-align:center;">
+                Image source:
+                <a href="https://safetylinejalousie.com.au/reshaping-sydneys-skyline-40-year-cap-on-building-heights-removed/"
+                    target="_blank">
+                    Safetyline Jalousie
+                </a>
+            </figcaption>
 
             <h1>Reforms Have Arrived: A Look Back in Time</h1>
             <p class="article-meta">Sydney · <time datetime="2034-01-18">January 18, 2034</time></p>
 
             <div class="prose">
-                <p>From early guardrails for drivers and delivery workers to a final push on platform transparency,
-                    this retrospective tracks how advocacy, inquiries, and organising shaped today’s protections.</p>
+                <p>As digital workers bask in the glory of the Digital Workers Rights Act, championed by the ADGWU, we
+                    take a moment to reflect back on the early stages of gig work, and the trials and tribulations
+                    experienced by those pioneering the industry.</p>
 
-                <p>In 2024, the federal government introduced first-step protections for rideshare and delivery
-                    workers, recognising that gig labour required a safety net
-                    (<a href="https://ministers.dewr.gov.au/watt/better-workplace-protections-rideshare-food-delivery-and-truck-drivers"
-                        target="_blank">Minister for Employment 2024</a>).
-                    Yet as research highlighted, loopholes remained — particularly around unpaid waiting time and
-                    automated pay changes. Scholars noted the precarious nature of digital labour, with algorithmic
-                    control reducing worker autonomy
-                    (<a href="https://doi.org/10.1111/ntwe.12233" target="_blank">Woodcock &amp; Graham 2019</a>;
-                    <a href="https://doi.org/10.1177/0022185618800518" target="_blank">Prassl 2018</a>).
+                <p>In 2024, the federal government announced long-awaited workplace protections for rideshare, food
+                    delivery and truck drivers, including ensuring platforms must
+                    <a href="https://ministers.dewr.gov.au/watt/better-workplace-protections-rideshare-food-delivery-and-truck-drivers"
+                        target="_blank">follow a fair process</a> when deactivating workers, but in 2030, critics say
+                    the reforms hadn’t kept pace with the growing dominance of gig platforms.
                 </p>
 
-                <p>Subsequent inquiries and reports, including the Victorian Government’s
-                    <a href="https://engage.vic.gov.au/inquiry-on-demand-workforce" target="_blank">Inquiry into the
-                        On-Demand Workforce (2020)</a>,
-                    identified widespread issues of insecurity, low pay, and lack of dispute resolution pathways.
-                    Cases before the Fair Work Commission, such as
+                <p>These measures followed pressure from organisations like the Transport Workers Union (TWU) and the
+                    Australian Unemployed Workers’ Union, who campaigned throughout the 2020s to close legal loopholes
+                    that allowed platforms to avoid treating workers as employees.</p>
+
+                <p>Other issues were also prevalent particularly to marginalised workers, for example women working dual
+                    roles as <a href="https://doi.org/10.1111/ntwe.12233" target="_blank">platform workers and also
+                        caregivers</a>. Platform work was also shown to further reinforce existing inequalities rather
+                    than mitigate them, as told in a report by
+                    <a href="https://doi.org/10.1177/0022185618800518" target="_blank">Flanagan</a>. Further to this,
+                    platform
+                    owners maintained that they were simply
+                    intermediaries between the gig workers and the work, and were not responsible for ensuring workers
+                    had <a
+                        href="https://research.ebsco.com/c/xsfqnt/viewer/pdf/utrlrxxlnz?route=details&auth-callid=cee8a2f2-29ac-4b63-9206-fcdf2517f38e"
+                        target="_blank">minimum wage or other benefits</a>.
+                </p>
+
+                <p>The Fair Work Commission began reviewing applications for ‘employee like’ benefits
                     <a href="https://www.fwc.gov.au/work-conditions/regulated-worker-minimum-standards/regulated-worker-minimum-standards-cases/ms2024-3"
-                        target="_blank">MS2024-3</a>,
-                    further demonstrated the need for minimum standards to cover regulated workers.
+                        target="_blank">submitted by the TWU in 2025</a>, which had responses from internal platform
+                    giants such as Uber, Amazon, DoorDash and MenuLog.
                 </p>
 
-                <p>By 2030 it was clear these piecemeal reforms were not enough. Building on the work of TWU and AUWU,
-                    ADGWU campaigned to close remaining gaps and standardise rights across platforms. As one analysis
-                    observed, Australian workers were among the most exposed to precarity globally
-                    (<a href="https://research.ebsco.com/c/xsfqnt/viewer/pdf/utrlrxxlnz?route=details&auth-callid=cee8a2f2-29ac-4b63-9206-fcdf2517f38e"
-                        target="_blank">Kyloh 2018</a>).</p>
+                <p>Victoria’s <a href="https://engage.vic.gov.au/inquiry-on-demand-workforce" target="_blank">Inquiry
+                        into the On-Demand Workforce (2020)</a> had already recommended enforceable minimum standards
+                    and a licensing scheme for platforms. Yet, many of those recommendations remain unfulfilled.</p>
 
-                <p>These efforts culminated in the passage of the
-                    <a href="parliament-digital-workers-rights-act.html">Digital Workers Rights Act 2033</a>,
-                    the landmark legislation that finally set baseline protections for all digital workers.
+                <p>We are now pleased to announce that ADGWU have successfully passed legislation that provides
+                    Australian gig workers with the following benefits previously only experienced by full time and part
+                    time staff:</p>
+                <ul>
+                    <li>Guaranteed minimum pay</li>
+                    <li>Superannuation inclusion</li>
+                    <li>Access to dispute resolution</li>
+                    <li>Health and safety protections</li>
+                    <li>Limits on unpaid waiting time</li>
+                </ul>
+
+                <p>Read more about the Act here:
+                    <a href="digital-workers-rights-act.html">Victory for Fair Pay: Parliament Passes the Digital
+                        Workers Rights
+                        Act</a>
                 </p>
             </div>
+
+            <section class="references">
+                <h2>References</h2>
+                <ul>
+                    <li><a href="https://ministers.dewr.gov.au/watt/better-workplace-protections-rideshare-food-delivery-and-truck-drivers"
+                            target="_blank">Australian Government (2024). Better workplace protections for rideshare,
+                            food delivery and truck drivers.</a></li>
+                    <li><a href="https://doi.org/10.1111/ntwe.12233" target="_blank">Flanagan, F. (2022). Precarity and
+                            platform work. New Technology, Work and Employment.</a></li>
+                    <li><a href="https://doi.org/10.1177/0022185618800518" target="_blank">Prassl, J. (2018). Collective
+                            voice in the gig economy. Journal of Industrial Relations.</a></li>
+                    <li><a href="https://research.ebsco.com/c/xsfqnt/viewer/pdf/utrlrxxlnz?route=details&auth-callid=cee8a2f2-29ac-4b63-9206-fcdf2517f38e"
+                            target="_blank">Kyloh, D. (2018). Wages crisis in Australia. University of Adelaide
+                            Press.</a></li>
+                    <li><a href="https://www.fwc.gov.au/work-conditions/regulated-worker-minimum-standards/regulated-worker-minimum-standards-cases/ms2024-3"
+                            target="_blank">Fair Work Commission (2025). Regulated Worker Minimum Standards Case
+                            MS2024-3.</a></li>
+                    <li><a href="https://engage.vic.gov.au/inquiry-on-demand-workforce" target="_blank">Victorian
+                            Government (2020). Inquiry into the On-Demand Workforce.</a></li>
+                </ul>
+            </section>
         </article>
     </main>
 
